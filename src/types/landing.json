@@ -1,0 +1,189 @@
+{
+  "Main": {
+    "banner_title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+        "label": "banner_title"
+      }
+    },
+    "banner_description": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+        "label": "banner_description"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "company": [],
+          "content": [],
+          "image": [],
+          "content_dialog": []
+        },
+        "choices": {
+          "company": {
+            "type": "Slice",
+            "fieldset": "content_sec_text",
+            "description": "content of company",
+            "icon": "insert_drive_file",
+            "display": "list",
+            "non-repeat": {},
+            "repeat": {
+              "text_animation": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "text_animation"
+                }
+              },
+              "comapny_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "comapny_title"
+                }
+              },
+              "company_content": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "company_content"
+                }
+              }
+            }
+          },
+          "content": {
+            "type": "Slice",
+            "fieldset": "content_sec_image",
+            "description": "content home page",
+            "icon": "content_paste",
+            "display": "list",
+            "non-repeat": {},
+            "repeat": {
+              "content_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "content_image"
+                }
+              },
+              "content_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "content_title"
+                }
+              },
+              "content_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "content_description"
+                }
+              }
+            }
+          },
+          "image": {
+            "type": "Slice",
+            "fieldset": "image",
+            "description": "image content home page",
+            "icon": "image",
+            "display": "list",
+            "non-repeat": {},
+            "repeat": {
+              "image_animation": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "image_animation"
+                }
+              }
+            }
+          },
+          "content_dialog": {
+            "type": "Slice",
+            "fieldset": "content_dialog",
+            "description": "content dialog home page",
+            "icon": "dialpad",
+            "display": "list",
+            "non-repeat": {
+              "dialog_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "dialog_title"
+                }
+              },
+              "dialog_content": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "dialog_content"
+                }
+              },
+              "image_banner": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "image_banner"
+                }
+              },
+              "offer_dialog": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                  "label": "offer_dialog_title"
+                }
+              },
+              "offer_dialog_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "offer_dialog_description"
+                }
+              },
+              "offer_contact_dialog": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "offer_contact_dialog"
+                }
+              },
+              "offer_notice_dialog": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "offer_notice_dialog"
+                }
+              }
+            },
+            "repeat": {
+              "dialog_icon": {
+                "type": "Image",
+                "config": {
+                  "constraint": {},
+                  "thumbnails": [],
+                  "label": "dialog_icon"
+                }
+              },
+              "icon_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "label": "icon_description"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "Main": {
+    "team_name": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+        "label": "team name"
+      }
+    },
+    "all_name": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+        "label": "all name"
+      }
+    },
+    "group_member": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "member": {
+            "type": "Image",
+            "config": {
+              "constraint": {
+                "width": 133,
+                "height": 133
+              },
+              "thumbnails": [],
+              "label": "member"
+            }
+          },
+          "staff_name": {
+            "type": "StructuredText",
+            "config": {
+              "multi": "paragraph",
+              "label": "staff_name"
+            }
+          }
+        },
+        "label": "group member"
+      }
+    },
+    "index": {
+      "type": "Number",
+      "config": {
+        "label": "index"
+      }
+    }
+  }
+}
